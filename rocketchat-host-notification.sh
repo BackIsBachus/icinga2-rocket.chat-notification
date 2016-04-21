@@ -15,5 +15,5 @@ else
 fi
 
 #Send message to Rocket.Chat
-PAYLOAD="payload={\"text\": \"${ICON} ${NOTIFICATIONTYPE} <http://${ICINGA_HOSTNAME}/icingaweb2/monitoring/host/services?host=${HOSTNAME}|${HOSTDISPLAYNAME}>: *${HOSTSTATE}* | ${HOSTOUTPUT} | [ *${NOTIFICATIONAUTHORNAME}* ] ${NOTIFICATIONCOMMENT} \"}"
+PAYLOAD="payload={\"text\": \"${ICON} ${NOTIFICATIONTYPE} <https://${ICINGA_HOSTNAME}/icingaweb2/monitoring/host/services?host=${HOSTNAME}|${HOSTDISPLAYNAME}>: *${HOSTSTATE}* | ${HOSTOUTPUT} | [ *${NOTIFICATIONAUTHORNAME}* ] ${NOTIFICATIONCOMMENT} \"}"
 curl --connect-timeout 30 --max-time 60 -s -S -X POST --data-urlencode "${PAYLOAD}" "${ROCKETCHAT_WEBHOOK_URL}"
