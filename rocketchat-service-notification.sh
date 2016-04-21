@@ -6,13 +6,13 @@ ROCKETCHAT_WEBHOOK_URL="<YOUR_ROCKETCHAT_WEBHOOK_INTEGRATION_URL>"
 #Set the message icon based on ICINGA service state
 if [ "$SERVICESTATE" = "CRITICAL" ]
 then
-    ICON=":bomb:"
+    ICON=":exclamation:"
 elif [ "$SERVICESTATE" = "WARNING" ]
 then
     ICON=":warning:"
 elif [ "$SERVICESTATE" = "OK" ]
 then
-    ICON=":beer:"
+    ICON=":white_check_mark:"
 elif [ "$SERVICESTATE" = "UNKNOWN" ]
 then
     ICON=":question:"
