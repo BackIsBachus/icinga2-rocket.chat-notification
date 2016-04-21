@@ -32,3 +32,7 @@ object UserGroup "oncall" {
   display_name = "oncall"
 }
 ```
+
+#### Sample message
+The notification will look something like that (feel to imagine that you see an emoji instead of text when relevant):
+`:emoji: NOTIFICATION_TYPE HOST_NAME (SERVICE_NAME): STATE | SERVICE_OUTPUT`
