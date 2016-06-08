@@ -4,10 +4,10 @@ ICINGA_HOSTNAME="<YOUR_ICINGAWEB2_HOSTNAME>"
 ROCKETCHAT_WEBHOOK_URL="<YOUR_ROCKETCHAT_WEBHOOK_INTEGRATION_URL>"
 
 #Set the message icon based on ICINGA service state
-if [ "$HOSTSTATE" = "Down" ]
+if [ "$HOSTSTATE" = "DOWN" ]
 then
     ICON=":exclamation:"
-elif [ "$HOSTSTATE" = "Up" ]
+elif [ "$HOSTSTATE" = "UP" ]
 then
     ICON=":white_check_mark:"
 else
